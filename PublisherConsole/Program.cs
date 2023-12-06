@@ -40,7 +40,7 @@ void QueryFilters()
     //}
 }
 
-//QueryFilters();
+QueryFilters();
 
 void AddSomeMoreAuthors()
 {
@@ -67,7 +67,7 @@ void SkipAndTakeAuthors()
     }
 }
 
-//SkipAndTakeAuthors();
+SkipAndTakeAuthors();
 
 void AddAuthorWithBook()
 {

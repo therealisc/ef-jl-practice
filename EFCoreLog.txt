@@ -1,0 +1,54 @@
+dbug: 06-Dec-23 12:59:08.615 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 06-Dec-23 12:59:08.619 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (33ms).
+dbug: 06-Dec-23 12:59:08.783 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[FirstName], [a].[LastName]
+      FROM [Authors] AS [a]
+      ORDER BY [a].[LastName], [a].[FirstName]
+info: 06-Dec-23 12:59:08.798 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[FirstName], [a].[LastName]
+      FROM [Authors] AS [a]
+      ORDER BY [a].[LastName], [a].[FirstName]
+dbug: 06-Dec-23 12:59:08.805 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 06-Dec-23 12:59:08.832 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 06-Dec-23 12:59:08.832 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 06-Dec-23 12:59:08.836 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[LastName]
+      FROM [Authors] AS [a]
+      WHERE [a].[Id] = @__p_0
+info: 06-Dec-23 12:59:08.849 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[FirstName], [a].[LastName]
+      FROM [Authors] AS [a]
+      WHERE [a].[Id] = @__p_0
+dbug: 06-Dec-23 12:59:08.867 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 06-Dec-23 12:59:08.870 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 06-Dec-23 12:59:08.870 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 06-Dec-23 12:59:08.870 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[FirstName], [a].[LastName]
+      FROM [Authors] AS [a]
+      ORDER BY (SELECT 1)
+      OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+info: 06-Dec-23 12:59:08.871 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[FirstName], [a].[LastName]
+      FROM [Authors] AS [a]
+      ORDER BY (SELECT 1)
+      OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+dbug: 06-Dec-23 12:59:08.871 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command) 
+      A data reader was disposed.
+dbug: 06-Dec-23 12:59:08.873 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 06-Dec-23 12:59:08.873 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Created DbCommand for 'ExecuteReader' (0m
